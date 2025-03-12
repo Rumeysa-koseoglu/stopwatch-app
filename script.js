@@ -5,6 +5,9 @@ let int; //a variable to store the timer
 //start the timer when the start button (startTimer) is clicked
 document.getElementById("startTimer").addEventListener("click", () => {
     //the displayTimer function runs every 10 milliseconds
+    if (int) {
+        clearInterval(int);
+    }
     int = setInterval(displayTimer, 10);
 });
 
