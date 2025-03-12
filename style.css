@@ -53,3 +53,64 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* mobile responsiveness */
+
+@media (max-width:768px) {
+
+    .container {
+        width: 80%;
+        min-width: 350px;
+        padding: 30px;
+    }
+
+    .timerDisplay {
+        font-size: 30px;
+        padding: 20px;
+        width: 110%;
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .buttons button {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 60%;
+        min-width: 200;
+        padding: 40px;
+    }
+
+    .timerDisplay {
+        font-size: 24px;
+        padding: 25px;
+        width: 150%;
+        left: -25%;
+    }
+
+    .buttons {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+        margin-top: 50px;
+    }
+
+    .buttons button {
+        font-size: 14px;
+        max-width: 200px;
+        text-align: center;
+        padding: 13px 23px;
+    }
+}
